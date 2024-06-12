@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q&A Model - Ask Me Anything</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/qna"></script>
+  <script defer src="index.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Ask Me Anything</h1>
+      <p>Get answers to your questions with our AI-powered Q&A model!</p>
+    </header>
+    <main>
+      <section class="context-section">
+        <h3>Context</h3>
+        <textarea id="context" rows="15" cols="80">Nikola Tesla...</textarea>
+      </section>
+      <section class="question-section">
+        <h3>Question</h3>
+        <input type="text" id="question" placeholder="Type your question here">
+        <button id="search">Search</button>
+      </section>
+      <section class="answer-section">
+        <h3>Answers</h3>
+        <div id="answer"></div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 AI Q&A Model. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
